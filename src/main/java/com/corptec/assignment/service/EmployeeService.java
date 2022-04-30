@@ -20,7 +20,7 @@ public class EmployeeService {
     }
 
     public List<Employee> getEmployeesByEmailType(String emailType) {
-        List<com.corptec.assignment.entity.Employee> employees = this.employeeRepository.findByEmailType(emailType);
+        List<com.corptec.assignment.entity.Employee> employees = this.employeeRepository.findByEmailType("@"+emailType);
         return getEmployeeModel(employees);
     }
 

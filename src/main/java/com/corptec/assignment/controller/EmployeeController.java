@@ -30,7 +30,6 @@ public class EmployeeController {
     @GetMapping(value = "/{emailType}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Employee>> getByEmailType(@PathVariable String emailType) {
         List<Employee> employees = employeeService.getEmployeesByEmailType(emailType);
-        // todo if employee size is 0 return a readable message
         return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 }
