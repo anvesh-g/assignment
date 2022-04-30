@@ -1,0 +1,5 @@
+
+aws-s3:
+  bucket-name: corptec-files
+  access-key: anvesh
+  secret-key: iWontReveal
